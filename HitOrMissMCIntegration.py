@@ -1,7 +1,4 @@
 import random
-import numpy as np 
-
-
 
 def f(x):
     return 3*x**2
