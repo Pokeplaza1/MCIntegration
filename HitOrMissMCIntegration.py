@@ -8,8 +8,8 @@ class Point():
         self.x = x
         self.y = y
         
-def generatePoint():
-    return Point(random.uniform(0,2), random.uniform(0,12))
+def generatePoint(lowerBound, upperBound, absoluteMax):
+    return Point(random.uniform(lowerBound, upperBound), random.uniform(0,absoluteMax))
     
 def isBellow(p, func):
     if func(p.x) >= p.y:
@@ -17,12 +17,12 @@ def isBellow(p, func):
     else: 
         return False
         
-def HMMonteCarloIntegral(func):
+def HMMonteCarloIntegral(func, lowerBound, upperBound, absoluteMax, sampleSize = 100000):
     count = 0
-    for i in range(0,10000):
-        p = generatePoint()
+    for i in range(0,sampleSize):
+        p = generatePoint(lowerBound, upperBound, absoluteMax)
         if isBellow(p, func):
             count += 1
-    print(24*count / 10000)
+    print(upperBound*absoluteMax*count / sampleSize)
     
-HMMonteCarloIntegral(f)
+HMMonteCarloIntegral(f, 0, 2, 12)
