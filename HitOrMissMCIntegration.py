@@ -1,4 +1,6 @@
 import random
+import matplotlib.pyplot as plt
+import numpy as np
 
 def f(x):
     return 3*x**2
@@ -18,11 +20,9 @@ def isBellow(p, func):
         return False
         
 def HMMonteCarloIntegral(func, lowerBound, upperBound, absoluteMax, sampleSize = 100000):
-    count = 0
+    count = 0.0
     for i in range(0,sampleSize):
         p = generatePoint(lowerBound, upperBound, absoluteMax)
         if isBellow(p, func):
             count += 1
-    print(upperBound*absoluteMax*count / sampleSize)
-    
-HMMonteCarloIntegral(f, 0, 2, 12)
+    return (upperBound*absoluteMax*count / sampleSize)

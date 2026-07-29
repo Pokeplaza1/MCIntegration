@@ -10,6 +10,6 @@ Contains a program that numerically approximates the definite integral $\int_{0}
 
 ## Limitations
 
-This program currently utilizes hard coded a function
-The methodology itself also requires knowing the absolute extrema of the function on the interval
-The is bellow function only checks bellow the function which only works if the function value is positive at that point
+-This program currently utilizes hard coded a function
+-The methodology itself also requires knowing the absolute extrema of the function on the interval
+-The is bellow function only checks bellow the function which only works if the function value is positive at that point
