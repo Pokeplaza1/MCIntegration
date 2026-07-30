@@ -1,8 +1,5 @@
 import random
 
-def f(x):
-    return 3*x**2
-
 class Point():
     def __init__(self, x, y):
         self.x = x
