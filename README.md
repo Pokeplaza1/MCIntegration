@@ -32,15 +32,16 @@ Contains two seperate functions one for 2 Dimensional Riemann sums and another f
 
 -The method used is the a left Riemman sum which is less accurate on some functions than a right Riemman sum but this averages out
 
-## Main function
+# Current findings
 
-Currently testing the the runtimes of 2 Dimensional Hit-or-Miss monte carlo integration and Left riemman sums. 
+The Monte Carlo intergration needs 10 times as many points to have a similar accuracy to the Riemman intgration in 2 dimensions. Due to this Monte Carlo methods take nearly 36 times longer to run than the Riemman sums. 
+
+
+
 
 # Planned Features
 
 1. modify functions to be multi dimensional
 2. Add Expected value MCintergration 
 3. Add trapezoid sums
-4. Do runtime analysis to compare the runtime of the different methods over dimensions to see the scaling of different methods
-5. Test accuracy of results as dimension of functions are increased
 

@@ -1,5 +1,4 @@
 import random
-import numpy as np
 
 def riemannSum(func,lowerBound, upperBound, partitions = 100000):
     delta = (upperBound - lowerBound) / partitions
