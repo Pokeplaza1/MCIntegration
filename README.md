@@ -4,7 +4,7 @@ Compare the runtimes and accuracy of different methods of numerical integration
 # Methods tested
 
 ## Hit or Miss Monte Carlo Integration
-Contains a program that numerically approximates the definite integral
+Contains two programs numerically approximating the definite intergral or double intergral of a 2d or 3d function respectively
 
 ### How
 
@@ -19,7 +19,7 @@ Contains a program that numerically approximates the definite integral
 -The is bellow function only checks bellow the function which only works if the function value is positive at that point
 
 ## Riemman sums
-Contains a function that takes a left Riemman sum of a given 2-d function
+Contains two seperate functions one for 2 Dimensional Riemann sums and another for 3 Dimensional Riemman Sums
 
 ### How
 
@@ -31,11 +31,10 @@ Contains a function that takes a left Riemman sum of a given 2-d function
 ### Limitations
 
 -The method used is the a left Riemman sum which is less accurate on some functions than a right Riemman sum but this averages out
--The function only works for 2-d functions and single integrals
 
 ## Main function
 
-Currently testing the accuracy of the Riemman sums vs. the Hit-or-Miss Monte Carlo Integration on the function $\int_{0}^{2} 3x^{2}\,dx$.
+Currently testing the the runtimes of 2 Dimensional Hit-or-Miss monte carlo integration and Left riemman sums. 
 
 # Planned Features
 
